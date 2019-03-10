@@ -29,7 +29,9 @@ SOURCES += \
         dialog.cpp
 
 HEADERS += \
-        dialog.h
+        dialog.h \
+    coordinate.h \
+    ball.h
 
 FORMS += \
         dialog.ui
