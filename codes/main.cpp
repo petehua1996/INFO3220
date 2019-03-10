@@ -1,6 +1,9 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    char m[7] = {'c','d'};
+    if(m[4] == '\0') cout << m << endl;
     return 0;
 }
