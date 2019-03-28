@@ -4,7 +4,9 @@ using namespace std;
 
 class A{
 public:
-    virtual int foo(){return 0;}
+    virtual int foo(){
+        return 0;
+        }
 };
 
 class B: public A{

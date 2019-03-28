@@ -10,11 +10,11 @@ Dialog::Dialog(QWidget *parent) :
     ui->setupUi(this);
     this->resize(1000, 600);
 
-//    QPixmap bkgnd(":/img/img/forest2.jpg");
-//    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
-//    QPalette palette;
-//    palette.setBrush(QPalette::Background, bkgnd);
-//    this->setPalette(palette);
+    QPixmap bkgnd(":/img/img/FlyingPaint.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 
     clouds.push_back(Cloud(30,100,20,1000));
     clouds.push_back(Cloud(300,200,20,1000));

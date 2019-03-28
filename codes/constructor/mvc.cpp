@@ -6,13 +6,13 @@ using namespace std;
 class Base
 {
   public:
-    Base(std ::string v) : value(std ::move(v)) {
+    Base(std ::string v) : value(std::move(v)) {
         cout << "Constructor Called" << endl;
         cout << "value: " << value << endl;
         cout << "v: \n" << v << endl;
     }
 
-    Base(Base && other) : value(std ::move(other.value)) {
+    Base(Base && other) : value(std::move(other.value)) {
         cout << "Move Constructor Called\n" << endl;
     }
 
