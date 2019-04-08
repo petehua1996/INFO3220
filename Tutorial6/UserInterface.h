@@ -9,6 +9,7 @@ public:
 
     int getInterfaceHeight(){ return m_height; }
     int getInterfaceWidth(){ return m_width; }
+    
 private:
     int m_height;
     int m_width;

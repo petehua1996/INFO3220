@@ -11,7 +11,7 @@ int sum(const int (&ptrArray)[10]){
     return sum;
 }
 
-int main() {
+int foo() {
     int size = 10;
     int n[10];
     for(int i=0;i<10;i++){
@@ -22,4 +22,9 @@ int main() {
     string s("hello");
     char * c = &s[0];
     return 0;
+}
+
+int main(){
+    int a = -60;
+    cout << a % 7 << endl;
 }
