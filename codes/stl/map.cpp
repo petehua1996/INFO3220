@@ -7,10 +7,11 @@ using namespace std;
 int main(){
     cout << "Map:" << endl;
     map<string,int> names;
-    names.insert(make_pair("abc",1));
+    names.insert(make_pair("abc",7));
     names.insert(make_pair("abc",2));
     auto mit = names.find("abc");
     if(mit != names.end()){
+        cout << mit->first << endl;
         cout << mit->second << endl;
     }
     cout << names["abc"] << endl;
