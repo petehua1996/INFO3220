@@ -21,8 +21,9 @@ int main(){
     x->ptr = y;
     y->ptr = x;
 
-    cout << x->value << endl;
-    cout << x.use_count() << endl;
+    cout << "Value of x: " << y->value << endl;
+    cout << "Use count of x: " << y.use_count() << endl;
+
     if(auto sx = x->ptr.lock()){
         cout << sx->value << endl;
         cout << sx.use_count() << endl;
@@ -30,10 +31,13 @@ int main(){
 
     y.reset();
     cout << "y reset" << endl;
-
-    if(auto sx = x->ptr.lock()){
+    
+    auto sx = x->ptr.lock();
+    if(sx != nullptr){
         cout << sx->value << endl;
         cout << sx.use_count() << endl;
+    } else {
+        cout << "sx is nullptr" << endl;
     }
 
 }
