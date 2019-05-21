@@ -110,9 +110,9 @@ public:
         return value == nullptr ? false:true;
     }
 
-    int * counter;
 private:
     T* value;
+    int * counter;
 };
 }  // namespace week12
 
